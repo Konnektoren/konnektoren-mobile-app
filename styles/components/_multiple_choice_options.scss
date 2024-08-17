@@ -1,0 +1,55 @@
+@use "../abstracts" as *;
+
+.challenge .multiple-choice-options {
+    align-self: center;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: left;
+    border: 1px solid #007bff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.1);
+    scale: 0.9;
+
+    .multiple-choice-option {
+        display: block;
+        padding: 1em;
+        margin: 1em 0;
+        background-color: #cce5ff;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        user-select: none;
+
+        label {
+            display: block;
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+
+    .multiple-choice-option:hover {
+        background-color: #b8daff;
+        scale: 1.05;
+    }
+
+    .multiple-choice-option input[type="radio"] {
+        display: none;
+    }
+
+    .multiple-choice-option input[type="radio"]:checked + span {
+        background-color: #0056b3;
+        color: #fff;
+        border-radius: 5px;
+        padding: 5px;
+        display: inline-block;
+    }
+
+    .multiple-choice-option span {
+        display: inline-block;
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        background-color: #e9ecef;
+        transition:
+            background-color 0.3s ease,
+            color 0.3s ease;
+    }
+}

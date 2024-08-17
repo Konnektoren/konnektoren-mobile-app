@@ -1,0 +1,95 @@
+@use "../abstracts" as *;
+
+h1 {
+    display: none;
+}
+
+.challenge {
+    margin-top: 2rem;
+    padding: 1em;
+    text-align: center;
+
+    h1 {
+        font-size: 2em;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    .challenge-info-button {
+        position: absolute;
+        right: 0;
+        z-index: 1;
+    }
+}
+
+.challenge .tasks-info {
+    display: none;
+}
+
+.challenge .unlock-points-info {
+    display: none;
+}
+
+.challenge .question {
+    font-size: 1.5em;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    background-color: #b8daff;
+    padding: 1em;
+    margin-top: 2.5em;
+    box-shadow: 0px 4px 8px rgba(255, 165, 0, 0.2);
+
+    h2 {
+        font-size: 0.5em;
+        text-align: left;
+    }
+}
+
+.challenge .challenge-actions {
+    border: 1px solid #007bff;
+    border-radius: 1rem;
+    margin-top: 1rem;
+
+    button {
+        padding: 5px 10px;
+        margin: 5px;
+    }
+}
+
+.challenge-page.correct {
+    animation: flicker-correct 0.5s linear;
+    .challenge {
+        background-color: transparent;
+    }
+}
+
+.challenge-page.incorrect {
+    animation: flicker-incorrect 0.5s linear;
+    .challenge {
+        background-color: transparent;
+    }
+}
+
+@keyframes flicker-correct {
+    0%,
+    100% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: #28a745;
+    }
+}
+
+@keyframes flicker-incorrect {
+    0%,
+    100% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: #dc3545;
+    }
+}

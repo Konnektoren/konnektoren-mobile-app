@@ -1,0 +1,31 @@
+@keyframes glowingBorder {
+    0% {
+        box-shadow: 0 0 5px #ff5f6d;
+    }
+    50% {
+        box-shadow: 0 0 20px #ffc371;
+    }
+    100% {
+        box-shadow: 0 0 5px #ff5f6d;
+    }
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 2em;
+    line-height: 2rem;
+    color: black;
+    text-align: center;
+    transition: width 0.4s ease;
+    animation:
+        intenseMoveGradient 3s linear infinite,
+        glowingBorder 3s infinite alternate;
+    background: linear-gradient(90deg, #ff0000, #ff7f00, #ffbf00, #ffff00);
+    background-size: 200% 100%;
+}

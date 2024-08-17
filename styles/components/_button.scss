@@ -1,0 +1,22 @@
+.challenge-actions button {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #007bff, #00c6ff);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 8px 15px rgba(0, 123, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.challenge-actions button:hover {
+    background: linear-gradient(45deg, #0056b3, #006bbf);
+    box-shadow: 0px 15px 20px rgba(0, 123, 255, 0.5);
+    transform: translateY(-5px);
+}
+
+.challenge-actions button:active {
+    transform: translateY(-2px);
+}

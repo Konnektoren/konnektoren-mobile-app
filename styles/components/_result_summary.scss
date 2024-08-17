@@ -1,0 +1,12 @@
+@use "../abstracts" as *;
+
+.result-summary {
+    margin-top: 5rem;
+    padding: 2em;
+    text-align: center;
+
+    h2 {
+        font-size: 0.5em;
+        text-align: left;
+    }
+}

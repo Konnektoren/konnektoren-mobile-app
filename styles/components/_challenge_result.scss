@@ -1,0 +1,65 @@
+@use "../abstracts" as *;
+
+.challenge .multiple-choice .challenge-result ul li {
+    display: none;
+}
+
+.challenge .multiple-choice ul li:last-child {
+    display: block;
+    background-color: #e1f5fe;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #b3e5fc;
+    }
+}
+
+.challenge-result {
+    h2 {
+        font-size: 0.5em;
+        text-align: left;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            padding: 0.5rem;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+
+            .result-correct {
+                background-color: #d4edda;
+                color: #155724;
+                border-radius: 1rem;
+                padding: 0.2rem;
+
+                &::before {
+                    content: "\f00c";
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    margin-right: 10px;
+                    color: #28a745;
+                }
+            }
+
+            .result-incorrect {
+                background-color: #f8d7da;
+                color: #721c24;
+                border-radius: 1rem;
+                padding: 0.2rem;
+
+                &::before {
+                    content: "\f00d";
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    margin-right: 10px;
+                    color: #dc3545;
+                }
+            }
+        }
+    }
+}
