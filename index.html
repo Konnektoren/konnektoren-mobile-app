@@ -6,6 +6,26 @@
     <link data-trunk rel="copy-dir" href="src/assets/" />
     <link data-trunk rel="scss" href="styles/index.scss" />
     <link data-trunk rel="copy-dir" href="public" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-N4PBT2YCM5"
+    ></script>
+    <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-RZE4XV6ER8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-N4PBT2YCM5", { groups: "default" });
+      gtag("config", "G-RZE4XV6ER8", { groups: "default" });
+    </script>
   </head>
   <body></body>
 </html>

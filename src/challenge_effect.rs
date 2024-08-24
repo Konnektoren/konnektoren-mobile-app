@@ -5,6 +5,7 @@ use konnektoren_yew::components::{ChallengeComponent, MusicComponent};
 use konnektoren_yew::effects::BlinkAnimation;
 use std::time::Duration;
 use yew::prelude::*;
+use crate::components::VibrateEffectComponent;
 
 #[derive(Properties, PartialEq)]
 pub struct Props {
@@ -54,6 +55,7 @@ pub fn challenge_effect_component(props: &Props) -> Html {
                     <>
                     <MusicComponent id={format!("music-effect-{}", c)} url="assets/music/UI Negative Signal 003.wav" repeat={false} />
                     <BlinkAnimation target_id={format!("challenge-effect-{}", c)} duration={Duration::from_millis(800)} color={"red"} />
+                    <VibrateEffectComponent duration={100} key={c} />
                     </>
                 });
             }

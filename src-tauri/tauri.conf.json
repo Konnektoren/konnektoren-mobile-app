@@ -1,6 +1,6 @@
 {
   "productName": "konnektoren-mobile-app",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "identifier": "help.konnektoren.app",
   "build": {
     "beforeDevCommand": "trunk serve",
