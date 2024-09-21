@@ -2,5 +2,5 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 fn main() {
-    konnektoren_mobile_app_lib::run()
+    konnektoren_app_lib::run()
 }

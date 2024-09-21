@@ -1,14 +1,12 @@
 [package]
-name = "konnektoren-mobile-app"
+name = "konnektoren-app"
 version = "0.1.4"
-description = "A Tauri App"
+description = "Konnektoren App for Desktop and Mobile"
 authors = ["chriamue"]
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [lib]
-name = "konnektoren_mobile_app_lib"
+name = "konnektoren_app_lib"
 crate-type = ["lib", "cdylib", "staticlib"]
 
 [build-dependencies]
